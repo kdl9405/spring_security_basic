@@ -23,15 +23,23 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	compile 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-security'
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	annotationProcessor 'org.projectlombok:lombok'
     compile 'org.springframework.boot:spring-boot-starter-mustache'
+    annotationProcessor 'org.projectlombok:lombok'
+	implementation group: 'mysql', name: 'mysql-connector-java', version: '5.1.39'
+
+
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+
+	compile 'mysql:mysql-connector-java'
+
 }
 
 test {
 	useJUnitPlatform()
 }
-d
